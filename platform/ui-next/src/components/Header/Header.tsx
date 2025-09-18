@@ -46,6 +46,7 @@ function Header({
   ...props
 }: HeaderProps): ReactNode {
   const onClickReturn = () => {
+    return;
     if (isReturnEnabled && onClickReturnButton) {
       onClickReturnButton();
     }

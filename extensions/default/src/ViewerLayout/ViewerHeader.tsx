@@ -51,12 +51,12 @@ function ViewerHeader({ appConfig }: withAppTypes<{ appConfig: AppTypes.Config }
     {
       title: AboutModal?.menuTitle ?? t('Header:About'),
       icon: 'info',
-      onClick: () =>
-        show({
-          content: AboutModal,
-          title: AboutModal?.title ?? t('AboutModal:About OHIF Viewer'),
-          containerClassName: AboutModal?.containerClassName ?? 'max-w-md',
-        }),
+      onClick: () => {},
+      // show({
+      //   content: AboutModal,
+      //   title: AboutModal?.title ?? t('AboutModal:About OHIF Viewer'),
+      //   containerClassName: AboutModal?.containerClassName ?? 'max-w-md',
+      // }),
     },
     {
       title: UserPreferencesModal.menuTitle ?? t('Header:Preferences'),
